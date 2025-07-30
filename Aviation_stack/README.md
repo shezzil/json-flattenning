@@ -1,14 +1,14 @@
-# ✈️ AviationStack JSON API Flattening Project
+#  AviationStack JSON API Flattening Project
 
-## 🚀 Overview
+##  Overview
 
 This project demonstrates how to **consume real-time flight data from the AviationStack API** and transform complex, nested JSON structures into clean, flat, and analysis-ready data tables using Python and pandas. It’s built for clarity, modularity, and reusability—ideal for data analytics, reporting, or integration into a data lake or BI tool.
 
-> 🔥 Designed to showcase practical **data wrangling skills** and real-world **API flattening logic** — the kind hiring managers love to see.
+>  Designed to showcase practical **data wrangling skills** and real-world **API flattening logic** — the kind hiring managers love to see.
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 
 This project extracts and flattens four key data layers:
 
@@ -23,7 +23,7 @@ Each table is transformed into a **deduplicated and normalized DataFrame**, read
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python 3.10+**
 - `requests` – Fetches real-time flight data from AviationStack API  
@@ -31,7 +31,7 @@ Each table is transformed into a **deduplicated and normalized DataFrame**, read
 
 ---
 
-## 🧠 Skills Demonstrated
+##  Skills Demonstrated
 
 ✅ Real-time API integration  
 ✅ JSON parsing and flattening from deeply nested structures  
@@ -41,24 +41,24 @@ Each table is transformed into a **deduplicated and normalized DataFrame**, read
 
 ---
 
-## 📊 Output Tables Preview
+##  Output Tables Preview
 
-### ✈️ Flights Table
+###  Flights Table
 | flight_number | flight_date | status    | delay_minute |
 |---------------|-------------|-----------|--------------|
 | 726           | 2025-07-28  | scheduled | NaN          |
 
-### 🕒 Timezone Table
+###  Timezone Table
 | flight_iata | dep_scheduled     | arr_scheduled     |
 |-------------|-------------------|-------------------|
 | sq726       | 2025-07-28T14:40  | 2025-07-28T17:00  |
 
-### 🏢 Airport Table
+###  Airport Table
 | airport_name | iata | icao | time_zone     |
 |--------------|------|------|---------------|
 | Yiwu         | YIW  | ZSYW | Asia/Shanghai |
 
-### 🏷 Airline Table
+###  Airline Table
 | airline_name        | iata | icao |
 |---------------------|------|------|
 | Singapore Airlines  | SQ   | SIA  |
@@ -86,7 +86,7 @@ Each table is transformed into a **deduplicated and normalized DataFrame**, read
 
 ---
 
-##  Next Steps (Optional Ideas)
+##  Next Steps
 
 - Export cleaned tables to CSV or Parquet  
 - Load into S3, PostgreSQL, or Snowflake  
